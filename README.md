@@ -1,10 +1,11 @@
-# Monitoramento de Temperatura com Arduino e Flask
+# Monitoramento de Temperatura com Arduino/ESP8266 e Flask
 
-Este projeto demonstra como monitorar e armazenar dados de temperatura usando um sensor de temperatura conectado a um Arduino ou ESP8266 e um servidor Python Flask. Os dados são armazenados em um banco de dados MySQL e podem ser visualizados através de uma interface web.
+Este projeto demonstra como monitorar e armazenar dados de temperatura usando um sensor de temperatura conectado a um Arduino, ESP8266 ou Raspberry Pi, e um servidor Python Flask. Os dados são armazenados em um banco de dados MySQL e podem ser visualizados através de uma interface web.
 
 ## Componentes
 
-- **Arduino ou ESP8266**: Placa de desenvolvimento para ler os dados do sensor de temperatura.
+- **Arduino ou ESP8266**: Placa de desenvolvimento para ler os dados do sensor de temperatura e enviar para o servidor.
+- **Raspberry Pi**: Opcionalmente, pode ser usado para rodar o servidor Flask e conectar diretamente ao sensor de temperatura.
 - **Sensor de Temperatura DHT22**: Sensor que mede a temperatura e umidade.
 - **Servidor Python Flask**: Recebe e armazena os dados do sensor.
 - **Banco de Dados MySQL**: Armazena os dados de temperatura.
@@ -24,5 +25,4 @@ Este projeto demonstra como monitorar e armazenar dados de temperatura usando um
 
    Certifique-se de ter o Python instalado e instale as dependências necessárias:
 
-   ```bash
    pip install flask mysql-connector-python
